@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
+
+            .geist {
+                font-family: "Geist Mono", monospace;
+                font-optical-sizing: auto;
+                font-style: normal;
+            }
+            body {
+                color: white;
+                background-color: darkslateblue;
+                text-align: center;
+            }
+            .card {
+                padding: 10px;
+                margin: 10px;
+                border: 2px solid white;
+            }
+            .green {
+                color: springgreen;
+            }
+            p {
+                font-size: 30px;
+            }
+        </style>
+    </head>
+    <body class="geist">
+        <div class="card">
+            <h1>People entered</h1>
+            <p class="green" id="count-el">0</p>
+            <!--create an incremet button with the id="increment-btn"-->
+            <button id="increment-btn" type="button" onclick="increment()">
+                Increment
+            </button>
+        </div>
+        <script src="counter.js"></script>
+    </body>
+</html>

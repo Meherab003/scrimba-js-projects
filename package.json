@@ -1,0 +1,5 @@
+{
+  "devDependencies": {
+    "@biomejs/cli-win32-x64": "^2.4.15"
+  }
+}
