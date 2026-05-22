@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
+
+.geist {
+    font-family: "Geist Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body {
+    color: white;
+    background-color: darkslateblue;
+    text-align: center;
+}
+.card {
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid white;
+}
+.green {
+    color: springgreen;
+}
+p {
+    font-size: 30px;
+}
+button {
+    color: darkslateblue;
+    background-color: white;
+    box-shadow: none;
+    border: 2px solid white;
+    font-size: 20px;
+    border-radius: 8px;
+    padding: 5px;
+    transition:
+        padding 0.3s,
+        font-size 0.3s;
+}
+button:active {
+    padding: 4px;
+    font-size: 19px;
+}

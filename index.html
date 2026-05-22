@@ -4,31 +4,7 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <style>
-            @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&display=swap");
-
-            .geist {
-                font-family: "Geist Mono", monospace;
-                font-optical-sizing: auto;
-                font-style: normal;
-            }
-            body {
-                color: white;
-                background-color: darkslateblue;
-                text-align: center;
-            }
-            .card {
-                padding: 10px;
-                margin: 10px;
-                border: 2px solid white;
-            }
-            .green {
-                color: springgreen;
-            }
-            p {
-                font-size: 30px;
-            }
-        </style>
+        <link rel="stylesheet" href="index.css" />
     </head>
     <body class="geist">
         <div class="card">
@@ -38,7 +14,14 @@
             <button id="increment-btn" type="button" onclick="increment()">
                 Increment
             </button>
+            <!--create a save button with id="save-btn" and save() function-->
+            <button id="save-btn" type="button" onclick="save()">Save</button>
+            <p id="save-el">Previous Entries:</p>
         </div>
+        <!--Welcome card-->
+        <!--<div>
+            <p id="welcome-el"></p>
+        </div>-->
         <script src="counter.js"></script>
     </body>
 </html>

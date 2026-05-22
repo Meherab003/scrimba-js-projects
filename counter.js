@@ -17,7 +17,7 @@
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>
 // VIDEO: Reassining and incrementing
-// // Create a variable, bonusPoints. Initialize it as 50. Increase it to 100.
+// Create a variable, bonusPoints. Initialize it as 50. Increase it to 100.
 // Decrease it down to 25, and then finally increase it to 70
 // Console.log the value after each step
 //
@@ -89,8 +89,64 @@
 // function increment() {
 // 	count = count + 1;
 // 	countEl.innerHTML = count;
-// 	console.log(count);
 // }
 
 //>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 // VIDEO: THE DOCUMENT OBJECT MODEL(DOM)👑
+// function save() {
+// 	console.log(countEl.innerText);
+// }
+
+//VIDEO:String datatype to show/work with texts
+// const myString = "This is a text and its a string datatype";
+// console.log(myString);
+
+//VIDEO: BETWEEN NUMBERS AND STRINGS
+// const myStr = "20";
+// const myNum = 26;
+// const both = myStr + myNum;
+// console.log(both); //if a number is added with string, the result will be a string not a number.
+
+//VIDEO: RENDER A WELCOME MESSAGE
+// Grab the welcome-el paragraph and store it in a variable called welcomeEl
+// Create two variables (name & greeting) that contains your name
+// and the greeting we want to render on the page
+// Render the welcome message using welcomeEl.innerText
+// const welcomeEl = document.getElementById("welcome-el");
+// const name = "Meherab";
+// const greeting = "Welcome to the bus  ";
+// welcomeEl.innerText = greeting + " " + name;
+// if I want to add an emoji
+// welcomeEl.innerText = welcomeEl.innerText + "👋";
+// or more concise way
+// welcomeEl.innerText += "👋";
+
+//VIDEO: CREATE A SAVE FEATURE
+const countEl = document.getElementById("count-el");
+const saveEl = document.getElementById("save-el");
+let count = 0;
+
+function increment() {
+	count += 1;
+	countEl.innerText = count;
+}
+
+function save() {
+	const countStr = count + " - ";
+	// saveEl.innerText = countStr; //this will not show the spaces in the element;
+	saveEl.textContent += countStr; //thos will show how text as it is including spaces;
+	count = 0;
+	countEl.innerText = count;
+}
+//with that being done, the first project is finished
+// what is learned in this project:
+// 1. script tag
+// 2. variable
+// 3. number
+// 4. string
+// 5. console.log()
+// 6. functions
+// 7. DOME
+// 8. getElementById()
+// 9. innerText
+// 10. textContent
