@@ -12,8 +12,9 @@ body {
 }
 .card {
     padding: 10px;
-    margin: 10px;
+    margin: 10px auto;
     border: 2px solid white;
+    max-width: 500px;
 }
 .green {
     color: springgreen;
@@ -36,4 +37,26 @@ button {
 button:active {
     padding: 4px;
     font-size: 19px;
+}
+
+img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid white;
+}
+.error {
+    color: orangered;
+    font-size: 16px;
+}
+.sm-box {
+    border: 1px dashed white;
+    padding: 5px 10px;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }

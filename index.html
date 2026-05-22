@@ -7,21 +7,48 @@
         <link rel="stylesheet" href="index.css" />
     </head>
     <body class="geist">
-        <div class="card">
+        <!--div for counter.js-->
+        <!--<div class="card">
             <h1>People entered</h1>
             <p class="green" id="count-el">0</p>
-            <!--create an incremet button with the id="increment-btn"-->
             <button id="increment-btn" type="button" onclick="increment()">
                 Increment
             </button>
-            <!--create a save button with id="save-btn" and save() function-->
             <button id="save-btn" type="button" onclick="save()">Save</button>
             <p id="save-el">Previous Entries:</p>
-        </div>
+        </div>-->
         <!--Welcome card-->
         <!--<div>
             <p id="welcome-el"></p>
         </div>-->
-        <script src="counter.js"></script>
+
+        <!--practice.js modules-->
+        <!--error message rendering-->
+        <div class="card" hidden>
+            <img
+                src="https://cdn.footy.com/blog/2019/July/7-best-cr7-football-boots-ranking-chapter-collection/cr7-chapter-7.jpg"
+                alt="CR Nike boot"
+            />
+            <p>Nike shoe</p>
+            <button id="purchase-btn" type="button" onclick="purchase()">
+                Purchase - $149
+            </button>
+            <p id="error-el" class="error"></p>
+        </div>
+
+        <!--calculator challenge-->
+        <div class="card">
+            <div class="flex">
+                <p class="sm-box" id="num1-el"></p>
+                <p class="sm-box" id="num2-el"></p>
+            </div>
+            <button type="button" onclick="add()">Add</button>
+            <button type="button" onclick="subtract()">Subtract</button>
+            <button type="button" onclick="divide()">Divide</button>
+            <button type="button" onclick="multiply()">Multiply</button>
+            <p class="sm-box" id="sum-el">Sum:</p>
+        </div>
+        <!--<script src="counter.js"></script>-->
+        <script src="practice1.js"></script>
     </body>
 </html>
