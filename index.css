@@ -60,3 +60,19 @@ img {
     justify-content: center;
     gap: 10px;
 }
+
+.blackjack-board {
+    background-color: #04793c;
+}
+.blackjack-btn {
+    background-color: #daa521;
+    color: #04793c;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.blackjack-title {
+    color: #daa521;
+}

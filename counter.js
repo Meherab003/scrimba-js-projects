@@ -133,8 +133,8 @@ function increment() {
 
 function save() {
 	const countStr = count + " - ";
-	// saveEl.innerText = countStr; //this will not show the spaces in the element;
-	saveEl.textContent += countStr; //thos will show how text as it is including spaces;
+	// saveEl.innerText = countStr; //This will not show the spaces in the element;
+	saveEl.textContent += countStr; //This will show the text as it is including spaces;
 	count = 0;
 	countEl.innerText = count;
 }
