@@ -158,17 +158,96 @@ const result = add(2, 3); // result is 5
 
 ---
 
-### Recap
+### Example: if, else if, and else Statements with Logical and Conditional Operators
 
-- Arrays and their methods
-- Objects and their properties/methods
-- Conditional statements and comparison operators
-- Logical operators
-- For loops
-- The Math object for randomness and rounding
-- The return statement in functions
+```js
+const age = 22;
+const hasTicket = true;
+
+// Using comparison and logical operators in if...else if...else
+if (age >= 21 && hasTicket) {
+  console.log("You may enter the club.");
+} else if (age >= 21 && !hasTicket) {
+  console.log("You need a ticket to enter.");
+} else {
+  console.log("You are not old enough to enter.");
+}
+
+// Key points:
+// - Use comparison operators (>=, <, ===, etc.) to compare values
+// - Use logical operators (&& for AND, || for OR, ! for NOT) to combine conditions
+// - if...else if...else allows for multiple branches of logic
+```
 
 ---
 
-**Tip:**  
-Revisit this documentation whenever you need a refresher on JavaScript basics, DOM manipulation, or event handling. Practice by modifying the counter or adding new features!
+### Example: Array and Its Methods
+
+```js
+const fruits = ["apple", "banana", "cherry"];
+
+// Accessing elements by index
+console.log(fruits[0]); // "apple"
+
+// Adding an element to the end
+fruits.push("date");
+
+// Removing the last element
+fruits.pop();
+
+// Getting the length of the array
+console.log(fruits.length); // 3
+
+// Key points:
+// - Arrays store ordered lists of values
+// - Use .push() to add, .pop() to remove
+// - Access elements with [index], starting at 0
+// - .length gives the number of elements
+```
+
+---
+
+### Example: Object
+
+```js
+const player = {
+  name: "Meherab",
+  chips: 145,
+  isActive: true,
+  greet: function () {
+    console.log("Hello, " + this.name + "!");
+  },
+};
+
+// Accessing and updating properties
+console.log(player.name); // "Meherab"
+player.chips += 10;
+
+// Calling a method
+player.greet();
+
+// Key points:
+// - Objects group related data and behavior (properties and methods)
+// - Access properties with dot notation (object.property)
+// - Methods are functions stored as object properties
+```
+
+---
+
+### Example: for Loop
+
+```js
+const numbers = [10, 20, 30, 40];
+
+// Looping through an array
+for (let i = 0; i < numbers.length; i++) {
+  console.log(numbers[i]);
+}
+
+// Key points:
+// - for loops repeat actions a set number of times
+// - Commonly used to iterate over arrays
+// - Structure: initialize; condition; increment
+```
+
+---
