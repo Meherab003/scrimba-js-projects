@@ -11,7 +11,7 @@ body {
     text-align: center;
 }
 .card {
-    padding: 10px;
+    padding: 20px 10px;
     margin: 10px auto;
     border: 2px solid white;
     max-width: 500px;
@@ -21,6 +21,9 @@ body {
 }
 p {
     font-size: 30px;
+}
+h1 {
+    font-size: 50px;
 }
 button {
     color: darkslateblue;
@@ -75,4 +78,5 @@ img {
 }
 .blackjack-title {
     color: #daa521;
+    margin-top: 20px;
 }

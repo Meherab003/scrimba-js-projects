@@ -69,6 +69,72 @@ This project serves as a documentation and recap of essential JavaScript concept
 
 ---
 
+### 9. Arrays
+
+- Learn to create arrays to store ordered lists of values.
+- Understand zero-based indexing and how to access elements by their index.
+- Use array methods like `.push()` to add and `.pop()` to remove elements.
+- Iterate over arrays using `for` loops to process or render each item.
+
+---
+
+### 10. Objects
+
+- Understand how to group related data and behavior using objects.
+- Store properties (key-value pairs) and methods (functions) inside objects.
+- Access and update object properties using dot notation.
+- Use objects to represent more complex entities, such as a player in a game.
+
+---
+
+### 11. Conditional Statements and Comparison Operators
+
+- Use `if`, `else if`, and `else` to control program flow based on conditions.
+- Apply comparison operators (`<`, `>`, `===`, etc.) to compare values.
+- Combine multiple conditions using logical operators (`&&` for AND, `||` for OR).
+
+---
+
+### 12. Booleans and State Management
+
+- Use boolean values (`true` or `false`) to track state (e.g., isAlive, hasBlackjack).
+- Update boolean variables to reflect changes in game or application state.
+- Use booleans in conditional statements to control logic flow.
+
+---
+
+### 13. Loops
+
+- Use `for` loops to repeat actions, such as rendering all items in an array.
+- Understand loop structure: initialization, condition, increment.
+- Practice iterating over arrays and performing actions on each element.
+
+---
+
+### 14. The Math Object
+
+- Use `Math.random()` to generate random numbers for unpredictability (e.g., drawing cards).
+- Use `Math.floor()` to round numbers down to the nearest integer.
+- Combine these methods to simulate dice rolls or random card draws.
+
+---
+
+### 15. Functions with Return Values
+
+- Write functions that return values using the `return` statement.
+- Store returned values in variables for further use.
+- Understand the difference between functions that perform actions and those that compute and return results.
+
+---
+
+### 16. Game Logic and UI Rendering
+
+- Combine arrays, objects, booleans, and functions to manage game state.
+- Use functions to start the game, draw new cards, and update the UI.
+- Render dynamic content (like cards and sums) based on the current state.
+
+---
+
 ### Example: A Function with Key Features
 
 ```js
@@ -89,6 +155,18 @@ const result = add(2, 3); // result is 5
 // - Functions can be called multiple times with different arguments
 // - Functions help organize and reuse code
 ```
+
+---
+
+### Recap
+
+- Arrays and their methods
+- Objects and their properties/methods
+- Conditional statements and comparison operators
+- Logical operators
+- For loops
+- The Math object for randomness and rounding
+- The return statement in functions
 
 ---
 
