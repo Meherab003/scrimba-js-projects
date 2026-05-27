@@ -3,7 +3,12 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>Scrimba JS Course</title>
+        <link
+            rel="icon"
+            type="image/png"
+            href="https://scrimba.com/assets/social-avatar.AK3RN3IF.jpg"
+        />
         <link rel="stylesheet" href="index.css" />
     </head>
     <body class="geist">
@@ -50,7 +55,7 @@
         </div>-->
 
         <!--Building a Blackjack game-->
-        <div class="card blackjack-board">
+        <div class="card blackjack-board" hidden>
             <h1 class="blackjack-title">Blackjack</h1>
             <p id="greeting-el"></p>
             <p id="message-el">Want to play a round</p>
@@ -64,8 +69,40 @@
             </button>
             <p id="player-el"></p>
         </div>
+
+        <!--practice2 section-->
+        <div>
+            <h1>Bingo<br />Game</h1>
+            <div style="font-size: 50px; margin-bottom: 20px" id="stage"></div>
+            <p
+                style="
+                    color: goldenrod;
+                    font-size: 40px;
+                    transform: rotate(-15deg);
+                    padding: 20px;
+                "
+                id="bingo-celeb"
+            ></p>
+            <button type="button" id="bingoButton">Pick Your Luck!</button>
+        </div>
+        <div hidden>
+            <h1
+                style="
+                    background-color: orange;
+                    padding: 5px;
+                    border-radius: 10px;
+                "
+                id="orange-shelf"
+            ></h1>
+            <h1
+                style="background-color: red; padding: 5px; border-radius: 10px"
+                id="apple-shelf"
+            ></h1>
+        </div>
+
         <!--<script src="counter.js"></script>-->
         <!--<script src="practice1.js"></script>-->
-        <script src="blackjack.js"></script>
+        <!--<script src="blackjack.js"></script>-->
+        <script src="practice2.js"></script>
     </body>
 </html>
