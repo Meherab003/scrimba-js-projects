@@ -123,9 +123,21 @@ bingoButton.addEventListener("click", () => {
 	const emoji3 = emojis[Math.floor(Math.random() * emojis.length)];
 	stageEl.textContent = emoji1 + "  " + emoji2 + "  " + emoji3;
 	if (emoji1 === emoji2 && emoji1 === emoji3) {
-		bingoCeleb.textContent = "Bingooo!!!";
+		bingoCeleb.innerHTML = `
+        <p
+            style="
+                color: goldenrod;
+                font-size: 40px;
+                padding: 20px;
+                font-weight: 700;
+                display: inline-block;
+                animation: popIn 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) forwards, wobble 0.7s ease-in-out 0.45s forwards;
+            "
+            id="bingo-celeb"
+        >🎉 Bingooo!!! 🎉</p>
+    `;
 	} else {
-		bingoCeleb.textContent = "";
+		bingoCeleb.innerHTML = `<p></p>`;
 	}
 });
 

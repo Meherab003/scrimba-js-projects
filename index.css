@@ -5,26 +5,32 @@
     font-optical-sizing: auto;
     font-style: normal;
 }
+
 body {
     color: white;
     background-color: darkslateblue;
     text-align: center;
 }
+
 .card {
     padding: 20px 10px;
     margin: 10px auto;
     border: 2px solid white;
     max-width: 500px;
 }
+
 .green {
     color: springgreen;
 }
+
 p {
     font-size: 30px;
 }
+
 h1 {
     font-size: 50px;
 }
+
 button {
     color: darkslateblue;
     background-color: white;
@@ -37,6 +43,7 @@ button {
         padding 0.3s,
         font-size 0.3s;
 }
+
 button:active {
     padding: 4px;
     font-size: 19px;
@@ -49,14 +56,17 @@ img {
     max-width: 500px;
     border: 2px solid white;
 }
+
 .error {
     color: orangered;
     font-size: 16px;
 }
+
 .sm-box {
     border: 1px dashed white;
     padding: 5px 10px;
 }
+
 .flex {
     display: flex;
     align-items: center;
@@ -67,6 +77,7 @@ img {
 .blackjack-board {
     background-color: #04793c;
 }
+
 .blackjack-btn {
     background-color: #daa521;
     color: #04793c;
@@ -76,7 +87,95 @@ img {
     padding-left: 30px;
     padding-right: 30px;
 }
+
 .blackjack-title {
     color: #daa521;
     margin-top: 20px;
+}
+
+.bingo {
+    color: goldenrod;
+    font-size: 40px;
+    padding: 20px;
+    display: inline-block;
+    animation:
+        popIn 0.45s cubic-bezier(0.36, 0.07, 0.19, 0.97) forwards,
+        wobble 0.7s ease-in-out 0.45s forwards;
+}
+
+@keyframes popIn {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    70% {
+        transform: scale(1.4);
+        opacity: 1;
+    }
+
+    85% {
+        transform: scale(0.88);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes wobble {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(-8deg);
+    }
+
+    50% {
+        transform: rotate(7deg);
+    }
+
+    70% {
+        transform: rotate(-4deg);
+    }
+
+    85% {
+        transform: rotate(2deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/*Chrome Extension*/
+input {
+    padding: 5px 10px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: transparent;
+    box-shadow: none;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-family: "Geist Mono", monospace;
+    margin: 10px auto;
+}
+
+ul {
+    list-style: none;
+    text-align: left;
+    padding: 10px 20px;
+    font-size: 20px;
+}
+
+li {
+    margin: 5px auto;
+}
+
+a {
+    color: lightblue
 }

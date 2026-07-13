@@ -71,18 +71,12 @@
         </div>
 
         <!--practice2 section-->
-        <div>
-            <h1>Bingo<br />Game</h1>
-            <div style="font-size: 50px; margin-bottom: 20px" id="stage"></div>
-            <p
-                style="
-                    color: goldenrod;
-                    font-size: 40px;
-                    transform: rotate(-15deg);
-                    padding: 20px;
-                "
-                id="bingo-celeb"
-            ></p>
+        <div hidden>
+            <h1>Bingo Game</h1>
+            <p style="font-size: 50px; margin-bottom: 20px" id="stage">
+                ❓ ❓ ❓
+            </p>
+            <div id="bingo-celeb"></div>
             <button type="button" id="bingoButton">Pick Your Luck!</button>
         </div>
         <div hidden>
@@ -100,9 +94,17 @@
             ></h1>
         </div>
 
+        <!--Build a Chrome Extension-->
+        <div>
+            <input type="text" id="input-el">
+            <button type="submit" id="input-btn">Save Input</button>
+            <ul id="ul-el"></ul>
+        </div>
+
         <!--<script src="counter.js"></script>-->
         <!--<script src="practice1.js"></script>-->
         <!--<script src="blackjack.js"></script>-->
-        <script src="practice2.js"></script>
+        <!--<script src="practice2.js"></script>-->
+        <script src="chrome_extension.js"></script>
     </body>
 </html>
